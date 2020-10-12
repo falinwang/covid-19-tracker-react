@@ -1,5 +1,7 @@
 # COVID-19 Cases Tracker
 
+A Live Interactive Covid-19 Cases Tracker built with React Hook, Chart.js, Leaflet.
+
 ## Links
 
 - [LIVE DEMO](https://covid-19-tracker-roy.web.app)
