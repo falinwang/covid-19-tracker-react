@@ -97,7 +97,7 @@ const App = () => {
           <InfoBox
             active={casesType === "cases"}
             onClick={(e) => setCasesType("cases")}
-            title="Coronavirus Cases"
+            title="Today Coronavirus Cases"
             isRed
             cases={prettyPrintStat(countryInfo.todayCases)}
             total={numeral(countryInfo.cases).format("0.0a")}
@@ -105,15 +105,15 @@ const App = () => {
           <InfoBox
             active={casesType === "recovered"}
             onClick={(e) => setCasesType("recovered")}
-            title="Recovered"
+            title="Today Recovered"
             cases={prettyPrintStat(countryInfo.todayRecovered)}
-            total={numeral(countryInfo.cases).format("0.0a")}
+            total={numeral(countryInfo.recovered).format("0.0a")}
           />
 
           <InfoBox
             active={casesType === "deaths"}
             onClick={(e) => setCasesType("deaths")}
-            title="Deaths"
+            title="Today Deaths"
             isRed
             cases={prettyPrintStat(countryInfo.todayDeaths)}
             total={numeral(countryInfo.deaths).format("0.0a")}
